@@ -1,6 +1,7 @@
 import "./styles.css";
-import ReactAudioPlayer from "react-audio-player";
+
 import { useState } from "react";
+import ReactAudioPlayer from "react-audio-player";
 
 export default function App() {
   const [src, setSrc] = useState();
@@ -9,29 +10,24 @@ export default function App() {
   const songs = [
     {
       title: "some title 1",
-      src:
-        "https://www.dropbox.com/s/i7jc9ojpnsyii2l/Urban%20Sunrise%20.mp3?raw=1&t=.wav&_=1"
+      src: "https://www.dropbox.com/s/i7jc9ojpnsyii2l/Urban%20Sunrise%20.mp3?raw=1&t=.wav&_=1",
     },
     {
       title: "another title",
-      src:
-        "https://www.dropbox.com/s/c26fdsksh9q0nzg/Images%20-%20Lost%20European.wav?raw=1&t=.wav&_=2"
+      src: "https://www.dropbox.com/s/c26fdsksh9q0nzg/Images%20-%20Lost%20European.wav?raw=1&t=.wav&_=2",
     },
     {
       title: "a third title",
-      src:
-        "https://www.dropbox.com/s/36gyipvdty81o51/What%20a%20beautiful%20Sunset%21%20%28radio%20mix%29%20-%20Angelwing.wav?raw=1&t=.wav&_=3"
+      src: "https://www.dropbox.com/s/36gyipvdty81o51/What%20a%20beautiful%20Sunset%21%20%28radio%20mix%29%20-%20Angelwing.wav?raw=1&t=.wav&_=3",
     },
     {
       title: "a fourth title",
-      src:
-        "https://www.dropbox.com/s/36gyipvdty81o51/What%20a%20beautiful%20Sunset%21%20%28radio%20mix%29%20-%20Angelwing.wav?raw=1&t=.wav&_=3"
+      src: "https://www.dropbox.com/s/36gyipvdty81o51/What%20a%20beautiful%20Sunset%21%20%28radio%20mix%29%20-%20Angelwing.wav?raw=1&t=.wav&_=3",
     },
     {
       title: "a fifth title",
-      src:
-        "https://www.dropbox.com/s/36gyipvdty81o51/What%20a%20beautiful%20Sunset%21%20%28radio%20mix%29%20-%20Angelwing.wav?raw=1&t=.wav&_=3"
-    }
+      src: "https://www.dropbox.com/s/36gyipvdty81o51/What%20a%20beautiful%20Sunset%21%20%28radio%20mix%29%20-%20Angelwing.wav?raw=1&t=.wav&_=3",
+    },
   ];
 
   return (
@@ -49,7 +45,7 @@ export default function App() {
         </p>
         <p>
           Please listen to each song and then select your top two preferences in
-          the for below.
+          the for m below.
         </p>
       </div>
 
