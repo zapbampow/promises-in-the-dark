@@ -50,18 +50,8 @@ export default function App() {
       </div>
 
       <div className="player-container">
-        <div style={{ width: "100%" }}>
-          <h2>
-            Playing: {title?.length > 0 ? title : "(select a song below)"}
-          </h2>
-          <ReactAudioPlayer
-            src={src}
-            controls
-            autoPlay
-            style={{ width: "100%" }}
-          />
-        </div>
-        <h2 style={{ marginTop: "3rem" }}>Select a song to play it</h2>
+        <div className="top-bar" />
+        <h2>Select a song to play it</h2>
         <ul className="list" style={{ marginBottom: "2rem" }}>
           {songs.map((song) => {
             return (
@@ -79,6 +69,17 @@ export default function App() {
             );
           })}
         </ul>
+        <div style={{ width: "100%", marginBottom: "1rem" }}>
+          <h2>
+            Playing: {title?.length > 0 ? title : "(nothing selected yet)"}
+          </h2>
+          <ReactAudioPlayer
+            src={src}
+            controls
+            autoPlay
+            style={{ width: "100%" }}
+          />
+        </div>
       </div>
 
       <iframe
