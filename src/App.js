@@ -45,7 +45,7 @@ export default function App() {
         </p>
         <p>
           Please listen to each song and then select your top two preferences in
-          the for m below.
+          the form below.
         </p>
       </div>
 
